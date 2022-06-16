@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="left-navbar">
+      <div class="left-navbar--links">
+        <img class="close-menu" src="./images/icon-close.svg" alt="close-svg" />
+        <ul class="left-navbar--link">
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header">
+      <nav class="top-navbar">
+        <div class="menu-logo">
+          <img class="menu" src="./images/icon-menu.svg" alt="menu" />
+          <img class="logo" src="./images/logo.svg" alt="" />
+        </div>
+        <div class="cart-avatar">
+          <div class="cart-container">
+            <img class="cart" src="./images/icon-cart.svg" alt="cart" />
+            <div class="total-count">0</div>
+            <div class="cart-update">
+              <h3>Cart</h3>
+              <div class="cart-updated">
+                <p class="empty">Your cart is empty.</p> 
+                
+              </div>
+            </div>
+          </div>
+          <img class="avatar" src="./images/image-avatar.png" alt="avatar" />
+        </div>
+      </nav>
+    </header>
+
+    <div class="carousel-container">
+      <div class="carousel-item carousel-item-visible">
+        <img src="./images/image-product-1.jpg" alt="" />
+      </div>
+      <div class="carousel-item">
+        <img src="./images/image-product-2.jpg" alt="" />
+      </div>
+      <div class="carousel-item">
+        <img src="./images/image-product-3.jpg" alt="" />
+      </div>
+      <div class="carousel-item">
+        <img src="./images/image-product-4.jpg" alt="" />
+      </div>
+      <div class="slide-mover">
+        <button class="slider-btn" id="previous">
+          <img src="./images/icon-previous.svg" alt="previous" />
+        </button>
+        <button class="slider-btn" id="next">
+          <img src="./images/icon-next.svg" alt="next" />
+        </button>
+      </div>
+    </div>
+
+    <article>
+      <p class="brand-name">Sneaker Company</p>
+      <h2 class="product-name">
+        Fall Limited Edition <br />
+        Sneakers
+      </h2>
+      <p class="product-desc">
+        These low profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they'll withstand anything the
+        whether can offer.
+      </p>
+      <div class="price-container">
+        <div class="price-discount">
+          <h2>$125.00</h2>
+          <h3>50%</h3>
+        </div class="discountPrice"> 
+        <h3>$250.00</h3>
+      </div>
+      <div class="quantity-cart-btn">
+        <div class="quantity">
+          <img class="minus" src="./images/icon-minus.svg" alt="minus">
+          <span class="count-plus-minus">0</span>
+          <img class="plus" src="./images/icon-plus.svg" alt="plus">
+        </div>
+        <div class="cart-btn">
+          <img src="./images/icon-cart.svg" alt="btn-cart">
+          Add to Cart
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
